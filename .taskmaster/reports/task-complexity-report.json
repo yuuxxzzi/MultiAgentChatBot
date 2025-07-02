@@ -1,0 +1,109 @@
+{
+	"meta": {
+		"generatedAt": "2025-07-02T13:21:08.992Z",
+		"tasksAnalyzed": 12,
+		"totalTasks": 12,
+		"analysisCount": 12,
+		"thresholdScore": 5,
+		"projectName": "Taskmaster",
+		"usedResearch": true
+	},
+	"complexityAnalysis": [
+		{
+			"taskId": 1,
+			"taskTitle": "프로젝트 저장소 설정",
+			"complexityScore": 3,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Break down the task into creating a GitHub repository, setting up a Python environment, and installing necessary libraries.",
+			"reasoning": "The task involves basic setup steps that are straightforward but require attention to detail to ensure all dependencies are correctly installed."
+		},
+		{
+			"taskId": 2,
+			"taskTitle": "감정 분석 에이전트 개발",
+			"complexityScore": 8,
+			"recommendedSubtasks": 5,
+			"expansionPrompt": "Divide the task into selecting a model, training the model, implementing real-time tagging, integrating crisis detection, and testing accuracy.",
+			"reasoning": "Developing an emotion analysis agent involves complex model selection, training, and integration of real-time features, which are technically challenging."
+		},
+		{
+			"taskId": 3,
+			"taskTitle": "상담 에이전트 개발",
+			"complexityScore": 9,
+			"recommendedSubtasks": 6,
+			"expansionPrompt": "Split the task into implementing GPT-4o, designing CBT flow, integrating Socratic questioning, testing scenarios, and refining responses.",
+			"reasoning": "This task requires advanced AI implementation and integration of psychological techniques, demanding significant expertise and testing."
+		},
+		{
+			"taskId": 4,
+			"taskTitle": "역할극 에이전트 개발",
+			"complexityScore": 7,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Break down the task into designing role-play prompts, implementing emotional immersion, testing scenarios, and evaluating insights.",
+			"reasoning": "Creating a role-play agent involves creative prompt design and ensuring effective emotional engagement, which is moderately complex."
+		},
+		{
+			"taskId": 5,
+			"taskTitle": "마인드풀니스 에이전트 개발",
+			"complexityScore": 6,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Divide the task into designing meditation guides, implementing conditional branching, testing crisis scenarios, and refining guidance.",
+			"reasoning": "The task involves implementing conditional logic and designing effective mindfulness techniques, which requires careful planning."
+		},
+		{
+			"taskId": 6,
+			"taskTitle": "보고서 생성 에이전트 개발",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Split the task into designing data visualization, implementing report generation, and testing accuracy of reports.",
+			"reasoning": "Generating reports involves data processing and visualization, which are moderately complex but manageable with clear steps."
+		},
+		{
+			"taskId": 7,
+			"taskTitle": "프론트엔드 UI 개발",
+			"complexityScore": 6,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Break down the task into designing UI layout, implementing user interactions, testing usability, and refining accessibility.",
+			"reasoning": "Developing a user-friendly interface requires design skills and iterative testing to ensure usability and accessibility."
+		},
+		{
+			"taskId": 8,
+			"taskTitle": "백엔드 API 통합",
+			"complexityScore": 7,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Divide the task into designing API endpoints, implementing data flow, testing response times, and ensuring data accuracy.",
+			"reasoning": "API integration involves designing and implementing data flow between systems, which requires technical expertise and thorough testing."
+		},
+		{
+			"taskId": 9,
+			"taskTitle": "LangGraph 기반 상태 전환 모델 통합",
+			"complexityScore": 8,
+			"recommendedSubtasks": 5,
+			"expansionPrompt": "Split the task into integrating LangGraph, designing state transitions, optimizing data flow, testing consistency, and refining transitions.",
+			"reasoning": "Managing state transitions with LangGraph is complex due to the need for precise control over data flow and system states."
+		},
+		{
+			"taskId": 10,
+			"taskTitle": "익명화된 DB 저장 및 세션 관리 구현",
+			"complexityScore": 7,
+			"recommendedSubtasks": 4,
+			"expansionPrompt": "Break down the task into designing anonymization techniques, implementing data storage, testing data security, and managing sessions.",
+			"reasoning": "Ensuring data security and anonymity involves implementing robust techniques and testing to protect user information."
+		},
+		{
+			"taskId": 11,
+			"taskTitle": "GPU 컴퓨팅 환경 설정",
+			"complexityScore": 5,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Divide the task into setting up GPU drivers, configuring environment settings, and testing model performance.",
+			"reasoning": "Setting up a GPU environment is moderately complex, involving hardware configuration and performance testing."
+		},
+		{
+			"taskId": 12,
+			"taskTitle": "HTTPS 보안 연결 설정",
+			"complexityScore": 4,
+			"recommendedSubtasks": 3,
+			"expansionPrompt": "Split the task into obtaining SSL certificates, configuring HTTPS settings, and testing secure data transmission.",
+			"reasoning": "Implementing HTTPS is straightforward but requires careful configuration and testing to ensure secure data transmission."
+		}
+	]
+}

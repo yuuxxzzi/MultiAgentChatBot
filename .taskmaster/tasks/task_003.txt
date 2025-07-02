@@ -1,0 +1,49 @@
+# Task ID: 3
+# Title: 상담 에이전트 개발
+# Status: pending
+# Dependencies: 2
+# Priority: high
+# Description: 공감 기반의 응답 생성 및 CBT 질문 생성을 구현합니다.
+# Details:
+GPT-4o를 사용하여 4단계 CBT 흐름을 구현하고, 소크라테스식 질문 기법을 적용합니다.
+
+# Test Strategy:
+CBT 흐름에 따라 다양한 시나리오를 테스트하여 응답의 적절성을 평가합니다.
+
+# Subtasks:
+## 1. GPT-4o 구현 [pending]
+### Dependencies: None
+### Description: GPT-4o 모델을 멀티 에이전트 상담 시스템에 통합합니다.
+### Details:
+GPT-4o 모델의 API를 설정하고, 시스템의 다른 구성 요소와 통신할 수 있도록 합니다.
+
+## 2. CBT 흐름 설계 [pending]
+### Dependencies: None
+### Description: 인지 행동 치료(CBT) 흐름을 설계하여 상담 에이전트에 통합합니다.
+### Details:
+CBT의 주요 요소를 식별하고, 이를 상담 에이전트의 대화 흐름에 반영합니다.
+
+## 3. 소크라테스식 질문 통합 [pending]
+### Dependencies: 3.2
+### Description: 상담 에이전트에 소크라테스식 질문 기법을 통합합니다.
+### Details:
+소크라테스식 질문의 원칙을 이해하고, 이를 대화 흐름에 적용하여 사용자가 스스로 답을 찾도록 유도합니다.
+
+## 4. 시나리오 테스트 [pending]
+### Dependencies: 3.1, 3.2, 3.3
+### Description: 다양한 시나리오를 통해 시스템의 기능을 테스트합니다.
+### Details:
+시스템의 각 기능이 의도한 대로 작동하는지 확인하기 위해 테스트 케이스를 작성하고 실행합니다.
+
+## 5. 응답 정제 [pending]
+### Dependencies: 3.4
+### Description: 시스템의 응답을 정제하여 사용자 경험을 향상시킵니다.
+### Details:
+테스트 결과를 바탕으로 응답의 정확성과 자연스러움을 개선합니다.
+
+## 6. LangGraph 통합 및 웹 인터페이스 개발 [pending]
+### Dependencies: 3.1, 3.5
+### Description: LangGraph를 시스템에 통합하고, 사용자 친화적인 웹 인터페이스를 개발합니다.
+### Details:
+LangGraph의 기능을 활용하여 시스템의 데이터 흐름을 최적화하고, 직관적인 웹 인터페이스를 설계합니다.
+

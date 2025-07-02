@@ -1,0 +1,683 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "프로젝트 저장소 설정",
+        "description": "프로젝트의 초기 저장소를 설정하고 필요한 종속성을 설치합니다.",
+        "details": "GitHub에 저장소를 생성하고, Python 환경을 설정합니다. 필요한 라이브러리(예: HuggingFace Transformers, Matplotlib)를 설치합니다.",
+        "testStrategy": "저장소가 올바르게 설정되었는지 확인하고, 모든 라이브러리가 설치되었는지 확인합니다.",
+        "priority": "medium",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "Create a GitHub Repository",
+            "description": "Set up a new GitHub repository for the project.",
+            "dependencies": [],
+            "details": "Create a new repository on GitHub with an appropriate name and description. Initialize it with a README file.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "Set Up a Python Environment",
+            "description": "Create a virtual environment for the project.",
+            "dependencies": [
+              1
+            ],
+            "details": "Use a tool like venv or conda to create a new Python virtual environment. Ensure the environment is activated and ready for package installations.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "Install Necessary Libraries",
+            "description": "Install all required Python libraries for the project.",
+            "dependencies": [
+              2
+            ],
+            "details": "Use pip to install libraries specified in the requirements.txt file or manually install necessary libraries like numpy, pandas, etc.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "감정 분석 에이전트 개발",
+        "description": "실시간 텍스트 감정 태깅 및 강도 추적 기능을 구현합니다.",
+        "details": "KcELECTRA 또는 BERT 기반의 분류 모델을 사용하여 감정 분석 기능을 구현합니다. 위기 감지 기능을 포함합니다.",
+        "testStrategy": "다양한 감정 상태의 텍스트를 입력하여 감정 태깅 및 강도 추적의 정확성을 테스트합니다.",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "모델 선택",
+            "description": "감정 분석 에이전트를 위한 적절한 모델을 선택합니다.",
+            "dependencies": [],
+            "details": "다양한 머신러닝 및 딥러닝 모델을 검토하고, 프로젝트 요구사항에 가장 적합한 모델을 선택합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "모델 학습",
+            "description": "선택한 모델을 학습시킵니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "선택한 모델을 사용하여 감정 분석을 위한 데이터셋으로 학습을 진행합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "실시간 태깅 구현",
+            "description": "실시간으로 감정 태깅을 수행할 수 있도록 시스템을 구현합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "모델이 실시간으로 데이터를 처리하고 감정을 태깅할 수 있도록 시스템을 개발합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "위기 감지 통합",
+            "description": "위기 상황을 감지할 수 있는 기능을 시스템에 통합합니다.",
+            "dependencies": [
+              3
+            ],
+            "details": "실시간 감정 분석 결과를 바탕으로 위기 상황을 감지하고 알림을 제공하는 기능을 추가합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "정확도 테스트",
+            "description": "시스템의 감정 분석 정확도를 테스트합니다.",
+            "dependencies": [
+              4
+            ],
+            "details": "다양한 테스트 케이스를 통해 시스템의 감정 분석 및 위기 감지 기능의 정확도를 평가합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "상담 에이전트 개발",
+        "description": "공감 기반의 응답 생성 및 CBT 질문 생성을 구현합니다.",
+        "details": "GPT-4o를 사용하여 4단계 CBT 흐름을 구현하고, 소크라테스식 질문 기법을 적용합니다.",
+        "testStrategy": "CBT 흐름에 따라 다양한 시나리오를 테스트하여 응답의 적절성을 평가합니다.",
+        "priority": "high",
+        "dependencies": [
+          2
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "GPT-4o 구현",
+            "description": "GPT-4o 모델을 멀티 에이전트 상담 시스템에 통합합니다.",
+            "dependencies": [],
+            "details": "GPT-4o 모델의 API를 설정하고, 시스템의 다른 구성 요소와 통신할 수 있도록 합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "CBT 흐름 설계",
+            "description": "인지 행동 치료(CBT) 흐름을 설계하여 상담 에이전트에 통합합니다.",
+            "dependencies": [],
+            "details": "CBT의 주요 요소를 식별하고, 이를 상담 에이전트의 대화 흐름에 반영합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "소크라테스식 질문 통합",
+            "description": "상담 에이전트에 소크라테스식 질문 기법을 통합합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "소크라테스식 질문의 원칙을 이해하고, 이를 대화 흐름에 적용하여 사용자가 스스로 답을 찾도록 유도합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "시나리오 테스트",
+            "description": "다양한 시나리오를 통해 시스템의 기능을 테스트합니다.",
+            "dependencies": [
+              1,
+              2,
+              3
+            ],
+            "details": "시스템의 각 기능이 의도한 대로 작동하는지 확인하기 위해 테스트 케이스를 작성하고 실행합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "응답 정제",
+            "description": "시스템의 응답을 정제하여 사용자 경험을 향상시킵니다.",
+            "dependencies": [
+              4
+            ],
+            "details": "테스트 결과를 바탕으로 응답의 정확성과 자연스러움을 개선합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 6,
+            "title": "LangGraph 통합 및 웹 인터페이스 개발",
+            "description": "LangGraph를 시스템에 통합하고, 사용자 친화적인 웹 인터페이스를 개발합니다.",
+            "dependencies": [
+              1,
+              5
+            ],
+            "details": "LangGraph의 기능을 활용하여 시스템의 데이터 흐름을 최적화하고, 직관적인 웹 인터페이스를 설계합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "역할극 에이전트 개발",
+        "description": "과거 사건을 기반으로 한 심리극 대화를 구현합니다.",
+        "details": "GPT 기반의 역할극 프롬프트 생성을 통해 감정 몰입과 자기 통찰을 유도합니다.",
+        "testStrategy": "다양한 역할극 시나리오를 통해 감정 몰입과 자기 통찰의 효과를 평가합니다.",
+        "priority": "medium",
+        "dependencies": [
+          3
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "역할극 프롬프트 설계",
+            "description": "역할극 에이전트를 위한 창의적인 프롬프트를 설계합니다.",
+            "dependencies": [],
+            "details": "다양한 시나리오와 캐릭터를 포함한 역할극 프롬프트를 개발하여 사용자와의 상호작용을 촉진합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "감정 몰입 구현",
+            "description": "사용자와의 상호작용에서 감정적 몰입을 구현합니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "역할극 프롬프트에 감정 분석을 통합하여 사용자 경험을 향상시킵니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "시나리오 테스트",
+            "description": "설계된 시나리오를 테스트하여 효과성을 평가합니다.",
+            "dependencies": [
+              1,
+              2
+            ],
+            "details": "다양한 사용자 그룹을 대상으로 시나리오를 테스트하고 피드백을 수집합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "인사이트 평가",
+            "description": "테스트 결과를 바탕으로 인사이트를 평가합니다.",
+            "dependencies": [
+              3
+            ],
+            "details": "수집된 피드백을 분석하여 역할극 에이전트의 개선점을 도출합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "마인드풀니스 에이전트 개발",
+        "description": "위기 상황에서의 명상 및 호흡 안내 기능을 구현합니다.",
+        "details": "감정 강도에 따라 조건부 분기를 통해 명상 및 감정 안정화 기법을 제공합니다.",
+        "testStrategy": "위기 상황 시나리오를 통해 명상 및 호흡 안내의 효과를 테스트합니다.",
+        "priority": "medium",
+        "dependencies": [
+          4
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "명상 가이드 설계",
+            "description": "멀티 에이전트 시스템의 마인드풀니스 에이전트를 위한 명상 가이드를 설계합니다.",
+            "dependencies": [],
+            "details": "명상 기법과 효과적인 가이드라인을 연구하고, 사용자에게 적합한 명상 세션을 설계합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "조건부 분기 구현",
+            "description": "상담 에이전트의 조건부 분기 로직을 구현합니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "사용자의 입력과 상황에 따라 상담 에이전트가 적절한 반응을 할 수 있도록 조건부 로직을 설계하고 구현합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "위기 시나리오 테스트",
+            "description": "위기 상황에서 시스템의 반응을 테스트합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "다양한 위기 시나리오를 설정하고, 시스템이 올바르게 대응하는지 테스트합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "가이드라인 개선",
+            "description": "테스트 결과를 바탕으로 명상 및 상담 가이드를 개선합니다.",
+            "dependencies": [
+              3
+            ],
+            "details": "테스트 결과를 분석하여 명상 및 상담 가이드라인을 개선하고, 사용자 경험을 향상시킵니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "title": "보고서 생성 에이전트 개발",
+        "description": "대화 로그 및 감정 시각화 보고서를 생성합니다.",
+        "details": "Python을 사용하여 대화 로그를 시각화하고 요약 보고서를 생성합니다.",
+        "testStrategy": "대화 로그 데이터를 기반으로 보고서가 정확하게 생성되는지 확인합니다.",
+        "priority": "medium",
+        "dependencies": [
+          5
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "데이터 시각화 설계",
+            "description": "데이터 시각화를 위한 디자인을 설계합니다.",
+            "dependencies": [],
+            "details": "사용자 요구사항에 맞는 데이터 시각화 디자인을 설계하고, 필요한 도구와 라이브러리를 선택합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "보고서 생성 구현",
+            "description": "데이터를 기반으로 보고서를 생성하는 기능을 구현합니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "데이터 시각화 설계를 바탕으로 보고서 생성 기능을 구현하고, 데이터 처리 로직을 개발합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "보고서 정확성 테스트",
+            "description": "생성된 보고서의 정확성을 테스트합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "보고서의 데이터 처리 및 시각화가 정확한지 테스트하고, 필요한 경우 수정합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "프론트엔드 UI 개발",
+        "description": "Streamlit 또는 Gradio를 사용하여 사용자 인터페이스를 개발합니다.",
+        "details": "사용자 친화적인 인터페이스를 제공하여 사용자가 쉽게 시스템을 사용할 수 있도록 합니다.",
+        "testStrategy": "UI의 사용성 및 접근성을 다양한 사용자 시나리오를 통해 테스트합니다.",
+        "priority": "medium",
+        "dependencies": [
+          6
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "UI 레이아웃 설계",
+            "description": "멀티 에이전트 상담 시스템의 사용자 인터페이스 레이아웃을 설계합니다.",
+            "dependencies": [],
+            "details": "각 에이전트의 기능을 고려하여 직관적이고 사용하기 쉬운 레이아웃을 설계합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "사용자 상호작용 구현",
+            "description": "사용자가 시스템과 상호작용할 수 있는 기능을 구현합니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "버튼, 입력 필드, 드롭다운 메뉴 등 사용자 인터페이스 요소의 상호작용을 구현합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "사용성 테스트",
+            "description": "시스템의 사용성을 테스트하여 사용자 경험을 개선합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "사용자 테스트를 통해 인터페이스의 직관성과 반응성을 평가하고 개선점을 도출합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "접근성 개선",
+            "description": "시스템의 접근성을 개선하여 다양한 사용자가 쉽게 접근할 수 있도록 합니다.",
+            "dependencies": [
+              3
+            ],
+            "details": "웹 접근성 지침을 준수하여 색상 대비, 키보드 내비게이션, 스크린 리더 호환성을 개선합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "백엔드 API 통합",
+        "description": "REST API 또는 WebSocket을 사용하여 백엔드를 통합합니다.",
+        "details": "백엔드와 프론트엔드 간의 데이터 흐름을 원활하게 하기 위해 API를 설계하고 구현합니다.",
+        "testStrategy": "API의 응답 시간 및 데이터 전송의 정확성을 테스트합니다.",
+        "priority": "medium",
+        "dependencies": [
+          7
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "API 엔드포인트 설계",
+            "description": "멀티 에이전트 상담 시스템을 위한 API 엔드포인트 설계",
+            "dependencies": [],
+            "details": "각 에이전트(감정 분석, 상담, 역할극, 마인드풀니스, 보고서)에 필요한 API 엔드포인트를 설계하고 문서화합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "데이터 흐름 구현",
+            "description": "API와 LangGraph 통합을 포함한 데이터 흐름 구현",
+            "dependencies": [
+              1
+            ],
+            "details": "설계된 API 엔드포인트를 기반으로 데이터 흐름을 구현하고 LangGraph와의 통합을 완료합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "응답 시간 테스트",
+            "description": "API 응답 시간 테스트 및 최적화",
+            "dependencies": [
+              2
+            ],
+            "details": "구현된 API의 응답 시간을 테스트하고 필요한 경우 최적화를 수행합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "데이터 정확성 보장",
+            "description": "데이터의 정확성을 보장하기 위한 검증 및 테스트",
+            "dependencies": [
+              2
+            ],
+            "details": "데이터의 정확성을 보장하기 위해 각 에이전트의 데이터 처리 결과를 검증하고 테스트합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "LangGraph 기반 상태 전환 모델 통합",
+        "description": "LangGraph를 사용하여 데이터 흐름을 관리합니다.",
+        "details": "LangGraph를 사용하여 시스템의 상태 전환을 관리하고, 각 에이전트 간의 데이터 흐름을 최적화합니다.",
+        "testStrategy": "상태 전환의 정확성과 데이터 흐름의 일관성을 테스트합니다.",
+        "priority": "medium",
+        "dependencies": [
+          8
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "LangGraph 통합",
+            "description": "LangGraph를 멀티 에이전트 상담 시스템에 통합합니다.",
+            "dependencies": [],
+            "details": "LangGraph의 API를 활용하여 시스템의 각 에이전트와의 상호작용을 구현합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "상태 전환 설계",
+            "description": "시스템의 상태 전환을 설계합니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "각 에이전트의 상태 전환을 정의하고, LangGraph와의 상호작용을 고려하여 설계합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "데이터 흐름 최적화",
+            "description": "시스템 내 데이터 흐름을 최적화합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "데이터의 효율적인 전송과 처리를 위해 데이터 흐름을 분석하고 최적화합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "일관성 테스트",
+            "description": "시스템의 일관성을 테스트합니다.",
+            "dependencies": [
+              3
+            ],
+            "details": "각 에이전트의 데이터 처리 및 상태 전환의 일관성을 확인하기 위한 테스트를 수행합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 5,
+            "title": "상태 전환 개선",
+            "description": "상태 전환을 개선합니다.",
+            "dependencies": [
+              4
+            ],
+            "details": "테스트 결과를 바탕으로 상태 전환의 효율성과 정확성을 높이기 위한 개선 작업을 수행합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "익명화된 DB 저장 및 세션 관리 구현",
+        "description": "사용자 데이터를 안전하게 저장하고 관리합니다.",
+        "details": "UUID 및 마스킹 처리를 통해 개인 정보를 보호하며, 익명화된 DB에 데이터를 저장합니다.",
+        "testStrategy": "데이터가 익명화되어 안전하게 저장되는지 확인합니다.",
+        "priority": "medium",
+        "dependencies": [
+          9
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "익명화 기술 설계",
+            "description": "사용자 정보를 보호하기 위한 익명화 기술을 설계합니다.",
+            "dependencies": [],
+            "details": "데이터 익명화 방법론을 연구하고, 시스템에 적합한 기술을 설계합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "데이터 저장소 구현",
+            "description": "안전한 데이터 저장을 위한 시스템을 구현합니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "익명화된 데이터를 안전하게 저장할 수 있는 데이터베이스 시스템을 구축합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "데이터 보안 테스트",
+            "description": "데이터 보안 및 익명화 기술의 효과를 테스트합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "시스템의 보안 취약점을 점검하고, 익명화 기술의 효과성을 검증합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 4,
+            "title": "세션 관리",
+            "description": "사용자 세션을 안전하게 관리하는 시스템을 개발합니다.",
+            "dependencies": [
+              3
+            ],
+            "details": "세션 관리 시스템을 설계하고, 사용자 데이터의 안전한 처리를 보장합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "title": "GPU 컴퓨팅 환경 설정",
+        "description": "모델 학습 및 추론을 위한 GPU 환경을 설정합니다.",
+        "details": "GPU를 활용하여 모델의 학습 및 추론 속도를 최적화합니다.",
+        "testStrategy": "GPU 환경에서 모델의 학습 및 추론 속도를 테스트하여 성능을 평가합니다.",
+        "priority": "medium",
+        "dependencies": [
+          10
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "GPU 드라이버 설치",
+            "description": "멀티 에이전트 시스템 개발을 위한 GPU 드라이버를 설치합니다.",
+            "dependencies": [],
+            "details": "적절한 GPU 드라이버를 다운로드하고 설치하여 시스템이 GPU를 인식할 수 있도록 설정합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "환경 설정 구성",
+            "description": "개발 환경을 설정하여 멀티 에이전트 시스템이 원활하게 작동하도록 합니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "필요한 라이브러리와 패키지를 설치하고, 환경 변수를 설정하여 개발 환경을 구성합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "모델 성능 테스트",
+            "description": "설치된 환경에서 모델의 성능을 테스트하여 최적화를 진행합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "테스트 데이터를 사용하여 모델의 성능을 평가하고, 필요한 경우 최적화를 진행합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "title": "HTTPS 보안 연결 설정",
+        "description": "시스템의 보안을 강화하기 위해 HTTPS 연결을 설정합니다.",
+        "details": "SSL 인증서를 설치하고 HTTPS 연결을 설정하여 데이터 전송의 보안을 강화합니다.",
+        "testStrategy": "HTTPS 연결을 통해 데이터가 안전하게 전송되는지 테스트합니다.",
+        "priority": "medium",
+        "dependencies": [
+          11
+        ],
+        "status": "pending",
+        "subtasks": [
+          {
+            "id": 1,
+            "title": "SSL 인증서 획득",
+            "description": "웹 서버에 사용할 SSL 인증서를 구매하거나 무료 인증서를 발급받습니다.",
+            "dependencies": [],
+            "details": "SSL 인증서를 제공하는 인증 기관(CA)에서 인증서를 구매하거나, Let's Encrypt와 같은 무료 서비스를 통해 인증서를 발급받습니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 2,
+            "title": "HTTPS 설정 구성",
+            "description": "웹 서버에 SSL 인증서를 설치하고 HTTPS 설정을 구성합니다.",
+            "dependencies": [
+              1
+            ],
+            "details": "웹 서버 소프트웨어(Apache, Nginx 등)에 SSL 인증서를 설치하고, HTTPS를 통해 안전한 연결을 설정합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          },
+          {
+            "id": 3,
+            "title": "보안 데이터 전송 테스트",
+            "description": "HTTPS 설정이 올바르게 작동하는지 테스트하고, 데이터 전송이 안전한지 확인합니다.",
+            "dependencies": [
+              2
+            ],
+            "details": "웹 브라우저와 네트워크 분석 도구를 사용하여 HTTPS 연결이 올바르게 설정되었는지 확인하고, 데이터 전송이 암호화되어 안전한지 테스트합니다.",
+            "status": "pending",
+            "testStrategy": ""
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "created": "2025-01-21",
+      "updated": "2025-07-02T13:14:53.695Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

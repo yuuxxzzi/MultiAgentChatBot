@@ -1,0 +1,31 @@
+# Task ID: 1
+# Title: 프로젝트 저장소 설정
+# Status: pending
+# Dependencies: None
+# Priority: medium
+# Description: 프로젝트의 초기 저장소를 설정하고 필요한 종속성을 설치합니다.
+# Details:
+GitHub에 저장소를 생성하고, Python 환경을 설정합니다. 필요한 라이브러리(예: HuggingFace Transformers, Matplotlib)를 설치합니다.
+
+# Test Strategy:
+저장소가 올바르게 설정되었는지 확인하고, 모든 라이브러리가 설치되었는지 확인합니다.
+
+# Subtasks:
+## 1. Create a GitHub Repository [pending]
+### Dependencies: None
+### Description: Set up a new GitHub repository for the project.
+### Details:
+Create a new repository on GitHub with an appropriate name and description. Initialize it with a README file.
+
+## 2. Set Up a Python Environment [pending]
+### Dependencies: 1.1
+### Description: Create a virtual environment for the project.
+### Details:
+Use a tool like venv or conda to create a new Python virtual environment. Ensure the environment is activated and ready for package installations.
+
+## 3. Install Necessary Libraries [pending]
+### Dependencies: 1.2
+### Description: Install all required Python libraries for the project.
+### Details:
+Use pip to install libraries specified in the requirements.txt file or manually install necessary libraries like numpy, pandas, etc.
+

@@ -1,0 +1,37 @@
+All tasks should be generated in Korean language.
+
+Multi-Agent Counseling LLM System
+
+Project Goal:
+Build a counseling chatbot system with 5 specialized AI agents.
+
+Core Agents:
+1. Emotion Analysis Agent - Analyze user emotions in real-time
+2. Counseling Agent - Provide CBT-based counseling responses  
+3. Role-playing Agent - Generate psychodrama conversations
+4. Mindfulness Agent - Guide meditation and breathing exercises
+5. Report Agent - Create counseling session reports
+
+Technical Stack:
+- Frontend: Streamlit or Gradio web interface
+- Backend: Python with REST API
+- AI Models: GPT-4o for agents, KcELECTRA for emotion analysis
+- Orchestration: LangGraph for agent coordination
+- Database: Session storage with anonymous IDs
+
+MVP Features:
+- Real-time emotion detection and tagging
+- Basic CBT conversation flow
+- Simple web interface
+- Session report generation
+
+Development Phases:
+Phase 1: Core emotion analysis and counseling agents
+Phase 2: Add role-playing and mindfulness agents  
+Phase 3: Advanced features and optimization
+
+Key Requirements:
+- Korean language support throughout system
+- Privacy protection with data anonymization
+- Real-time response capabilities
+- Emotional crisis detection and intervention 

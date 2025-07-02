@@ -1,0 +1,31 @@
+# Task ID: 12
+# Title: HTTPS 보안 연결 설정
+# Status: pending
+# Dependencies: 11
+# Priority: medium
+# Description: 시스템의 보안을 강화하기 위해 HTTPS 연결을 설정합니다.
+# Details:
+SSL 인증서를 설치하고 HTTPS 연결을 설정하여 데이터 전송의 보안을 강화합니다.
+
+# Test Strategy:
+HTTPS 연결을 통해 데이터가 안전하게 전송되는지 테스트합니다.
+
+# Subtasks:
+## 1. SSL 인증서 획득 [pending]
+### Dependencies: None
+### Description: 웹 서버에 사용할 SSL 인증서를 구매하거나 무료 인증서를 발급받습니다.
+### Details:
+SSL 인증서를 제공하는 인증 기관(CA)에서 인증서를 구매하거나, Let's Encrypt와 같은 무료 서비스를 통해 인증서를 발급받습니다.
+
+## 2. HTTPS 설정 구성 [pending]
+### Dependencies: 12.1
+### Description: 웹 서버에 SSL 인증서를 설치하고 HTTPS 설정을 구성합니다.
+### Details:
+웹 서버 소프트웨어(Apache, Nginx 등)에 SSL 인증서를 설치하고, HTTPS를 통해 안전한 연결을 설정합니다.
+
+## 3. 보안 데이터 전송 테스트 [pending]
+### Dependencies: 12.2
+### Description: HTTPS 설정이 올바르게 작동하는지 테스트하고, 데이터 전송이 안전한지 확인합니다.
+### Details:
+웹 브라우저와 네트워크 분석 도구를 사용하여 HTTPS 연결이 올바르게 설정되었는지 확인하고, 데이터 전송이 암호화되어 안전한지 테스트합니다.
+

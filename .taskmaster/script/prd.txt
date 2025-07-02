@@ -1,0 +1,98 @@
+All tasks and subtasks should be generated in Korean language.
+
+Multi-Agent Counseling LLM System PRD
+
+## Overview
+Build a multi-agent based counseling LLM system for MZ generation.
+Agents handle emotion analysis, CBT therapy, psychodrama role-playing, mindfulness interventions, and counseling reports.
+Target users are MZ generation who prefer non-face-to-face text communication.
+
+This system solves:
+- Limitations of single-agent structures
+- Absence of real-time emotional response
+- Failure to induce emotional immersion
+
+## Core Features
+
+### 1. Emotion Analysis Agent
+- Real-time text emotion tagging and intensity tracking
+- Crisis detection capabilities
+- KcELECTRA or BERT-based classification models
+
+### 2. Counseling Agent
+- Empathy-based responses and CBT question generation
+- Socratic questioning methods
+- GPT-4o utilization with 4-stage CBT flow
+
+### 3. Role-playing Agent
+- Psychodrama conversations based on past events
+- Emotional immersion and self-insight
+- GPT-based role-playing prompt generation
+
+### 4. Mindfulness Agent
+- Meditation and breathing guidance during crisis
+- Emotional stabilization techniques
+- Conditional branching based on emotional intensity
+
+### 5. Report Generation Agent
+- Conversation logs and emotion visualization reports
+- User insights and counseling reflection
+- Python-based visualization and summarization
+
+## Technical Architecture
+
+### System Components
+- Multi-agent system (Counseling, Emotion Analysis, Roleplay, Mindfulness, Report)
+- Frontend: Streamlit or Gradio
+- Backend: REST API or WebSocket integration
+- Data flow: LangGraph-based state transition model
+
+### Data Models
+- Emotion data (labels and scores)
+- Conversation logs and session records
+- Anonymous ID-based counseling history
+
+### APIs and Integrations
+- GPT-4o API
+- HuggingFace Transformers
+- Python Matplotlib
+- RESTful API
+
+### Infrastructure Requirements
+- GPU computing environment
+- HTTPS secure connection
+- Anonymized DB storage and session management
+
+## Development Roadmap
+
+### MVP Requirements
+- Real-time emotion analysis
+- CBT conversation flow construction
+- Basic report generation
+- Web interface provision
+
+### Phase 2: Interactive Features
+- Role-playing agent addition
+- Mindfulness intervention addition
+- Enhanced emotion analysis
+- Improved report visualization
+
+### Phase 3: Refinement and Scale
+- Top-k examples insertion
+- Personalization system
+- User satisfaction evaluation
+- Multi-session storage functionality
+
+## Logical Dependencies
+1. Emotion analysis agent
+2. Counseling agent
+3. Frontend UI and report generation
+4. Role-playing and mindfulness
+5. LangGraph integration
+
+## Risks and Mitigations
+- Low emotion analysis accuracy - Fine-tune Korean sentiment models
+- Inconsistent GPT responses - Example-based prompt design
+- Unbalanced role distribution - Clear functional division
+- Personal information exposure - UUID and masking processing
+- Excessive MVP scope - Prioritize core functionality development 
